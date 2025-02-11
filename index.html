@@ -9,23 +9,43 @@
 </head>
 <body>
     <nav>
-        <div class="logo">
-            <img class="logoimg" src="Assets/icons/metamask-icon.svg">
-        </div>
-        <div class="brandname">
-            <h1>METAMASK</h1>
-        </div>
-        <div class="navbtn">
-            <button class="btns" id="ftr">Features<img class="navdarrow" src="Assets/angle-arrow-down.png"></button>
-            <button class="btns" id="bld">Build<img class="navdarrow" src="Assets/angle-arrow-down.png"></button>
-            <button class="btns" id="rsrcs">Resources<img class="navdarrow" src="Assets/angle-arrow-down.png"></button>
-            <button class="btns">Learn</button>
-            <div class="features" id="msbe"></div>
-            <div class="features" id="bsfc"></div>
-            <div class="features" id="disf"></div>
-        </div>
-        <a href= "support/index.html"><button  class="download">Restore</button></a>
-    </nav>
+    <div class="logo">
+        <img class="logoimg" src="Assets/icons/metamask-icon.svg">
+    </div>
+    <div class="brandname">
+        <h1>METAMASK</h1>
+    </div>
+    <div class="navbtn">
+        <button class="btns" id="ftr">Features<img class="navdarrow" src="Assets/angle-arrow-down.png"></button>
+        <button class="btns" id="bld">Build<img class="navdarrow" src="Assets/angle-arrow-down.png"></button>
+        <button class="btns" id="rsrcs">Resources<img class="navdarrow" src="Assets/angle-arrow-down.png"></button>
+        <button class="btns">Learn</button>
+        <div class="features" id="msbe"></div>
+        <div class="features" id="bsfc"></div>
+        <div class="features" id="disf"></div>
+    </div>
+    <a href="support/index.html"><button class="download">Restore</button></a>
+
+    <!-- Hamburger Icon (will show on mobile view) -->
+    <div class="hamburger" id="hamburger">
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+    </div>
+</nav>
+<script>
+// JavaScript to toggle the navigation menu on hamburger click
+const hamburger = document.getElementById("hamburger");
+const navbtn = document.querySelector(".navbtn");
+const body = document.body;
+
+hamburger.addEventListener("click", () => {
+    navbtn.classList.toggle("show");
+    body.classList.toggle("menu-open");
+});
+
+</script>
+
 
     <main>
         <div class="main1">
